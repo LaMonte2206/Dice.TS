@@ -20,3 +20,9 @@ function addDie() {
     die.insert();
     dice.push(die);
 }
+function rollDice() {
+    for (var i = 0; i < dice.length; i++) {
+        var die = dice[i];
+        die.roll();
+    }
+}
