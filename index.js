@@ -26,3 +26,10 @@ function rollDice() {
         die.roll();
     }
 }
+function sumDice() {
+    var sum = 0;
+    for (var i = 0; i < dice.length; i++) {
+        var die = dice[i];
+        sum += die.value;
+    }
+}

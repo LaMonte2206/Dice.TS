@@ -32,3 +32,12 @@ function rollDice() {
         die.roll();
     }
 }
+ function sumDice() {
+     let sum = 0;
+     for (let i = 0; i < dice.length; i++) {
+         let die = dice[i];
+         sum += die.value;
+         
+     }
+ }
+
