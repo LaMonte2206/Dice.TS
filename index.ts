@@ -25,3 +25,10 @@ function addDie() {
     die.insert();
     dice.push(die);
 }
+
+function rollDice() {
+    for (let i = 0; i < dice.length; i++) {
+        let die = dice[i];
+        die.roll();
+    }
+}
