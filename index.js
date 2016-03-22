@@ -11,6 +11,7 @@ var Die = (function () {
     Die.prototype.roll = function () {
         var randomNumber = Math.floor(Math.random() * 6) + 1;
         this.div.innerText = String(randomNumber);
+        this.value = randomNumber;
     };
     return Die;
 }());
@@ -27,9 +28,14 @@ function rollDice() {
     }
 }
 function sumDice() {
-    var sum = 0;
+    var sumDice = 0;
     for (var i = 0; i < dice.length; i++) {
         var die = dice[i];
-        sum += die.value;
+        sumDice += die.value;
+        //  die.roll();
+        console.log('im doing something, i just dont know what');
     }
+    //  let div = document.getElementsByClassName('sum');
+    //  this.div.String('Your total is: ' + sumDice);
+    alert('Your sum is: [' + sumDice + ']');
 }

@@ -15,8 +15,10 @@ class Die {
     roll() {
         let randomNumber = Math.floor(Math.random() * 6) + 1;
         this.div.innerText = String(randomNumber);
+        this.value = randomNumber;
     }
-}
+   
+    }
 
 let dice: Array<Die> = [];
 
@@ -33,11 +35,17 @@ function rollDice() {
     }
 }
  function sumDice() {
-     let sum = 0;
+     let sumDice = 0;
      for (let i = 0; i < dice.length; i++) {
          let die = dice[i];
-         sum += die.value;
-         
+         sumDice += die.value;
+        //  die.roll();
+         console.log('im doing something, i just dont know what');        
      }
- }
+    //  let div = document.getElementsByClassName('sum');
+    //  this.div.String('Your total is: ' + sumDice);
+ 
+alert('Your sum is: [' + sumDice + ']');
+}
+ 
 

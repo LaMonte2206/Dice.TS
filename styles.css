@@ -1,5 +1,7 @@
 .button-container {
     display: flex;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 .add button {
     color:gold;
@@ -13,10 +15,10 @@
     margin-left: 100px;
     height:50px;
     width:100px;
-    background: -webkit-gradient(linear, left top, left bottom, from(midnightblue), to(white));
+    background: -webkit-gradient(linear, left top, left bottom, from(blue), to(white));
 }
 .sum button {
-        color: white;
+    color: white;
     margin-left: 100px;
     height:50px;
     width:100px;
@@ -26,8 +28,8 @@
 .die {
     border:solid black;
     border-radius: 10px;
-    height: 100px;
-    width: 100px; 
+    height: 125px;
+    width: 125px; 
     float: left;
     font-size: 75px; 
     text-align: center;
